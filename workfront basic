@@ -13,10 +13,10 @@ By the end of this lesson, I should be able to:
 
 ## 1. What Is Adobe Workfront?
 
-Definition: Adobe Workfront is a work management platform that helps organizations plan, organize, assign, track, and complete work in one centralized place.
+Definition:Adobe Workfront is a work management platform. Companies use it to plan work, assign it to people, track progress, get approvals, and report on results, all in one place instead of scattered across emails, spreadsheets and chat.
+It is used mostly by marketing, creative, IT and operations teams, where a lot of work comes in from a lot of people.
 
 Why Do Companies Use Workfront?
-
 - Centralize work management.
 - Assign work to team members.
 - Track project progress and deadlines.
@@ -25,45 +25,66 @@ Why Do Companies Use Workfront?
 - Improve collaboration and visibility.
 
 Interview Question: What is Adobe Workfront?
-
 Answer: Adobe Workfront is a work management platform that helps organizations centralize and organize their work. It enables teams to manage projects, assign tasks, track progress and deadlines, handle requests and approvals, and generate reports.
 
 ---
+2. How work flows through it
 
-## 2. Basic Workfront Objects
+Take a marketing team launching a product campaign:
+
+      Planning: leadership decides which campaigns to run this year (Workfront Planning).
+      Request: sales needs a landing page and submits a request form. It goes into a request queue so nothing is lost.
+      Project: the manager turns the request into a project, often from a template.
+      Tasks: the project is broken into tasks like “write copy”, “design” and “build”, with dates and dependencies, assigned to people.
+      Doing the work: people see their tasks in “My work”, update progress and log hours.
+      Review: the design is uploaded, reviewers comment on it (proofing), and an approval makes it official.
+      Problems: a bug appears after launch and is logged as an issue.
+      Reporting: managers check reports and dashboards to see what’s on track.
+
+4. The building blocks (object hierarchy)
+
+Everything in Workfront is an object. The main ones form a hierarchy:
+Portfolio   →  Program   →  Project  →  Task  →  Subtask 
+Issue  (attached to a project or task)
+
+Portfolio: a group of programs and projects, used by leadership to track strategy, budget and health.
+Program: a group of related projects with a shared goal, like everything for one product launch.
+Project: one defined body of work with a start, an end and tasks.
+Task: a planned piece of work inside a project. Dates, dependencies and assignments live here.
+Subtask: a task nested under another task.
+Issue: unplanned work, like a bug or a change request.
+
+Task vs. issue vs. request is a very common interview question:
+
+A task is planned work in a project.
+An issue is unplanned work.
+A request is an issue submitted through a request queue.
+Issues and requests can be converted into tasks or projects.
 
 
-| Project | Organizes a larger body of work ----- Launch a marketing campaign 
-| Task | Represents an individual activity ------ Design a campaign banner 
-| Issue | Tracks work or a problem requiring attention ------- Correct an incorrect banner 
-| Request | Captures a need for work through a configured process -------- Submit a campaign brief 
+5. Object codes (objCode)
 
-Quick Memory Tip
+Every object type has a short code, and the API uses these codes to know which object you mean:
+Object code = the name that code uses to talk about an object.
 
-- Project = Overall work
-- Task = Activity
-- Issue = Work or problem requiring attention
-- Request = Submitted need for work
+Object	Code
+Portfolio	PORT
+Program	PRGM
+Project	PROJ
+Task / subtask	TASK
+Issue	OPTASK
+User	USER
+Team	TEAMOB
+Document	DOCU
+Issue OPTASK 
 
-### Important Note
+The one to remember is OPTASK for issues, because the code doesn’t match the name. Interviewers like asking about it. Confirm codes against Adobe’s API documentation, since it’s the source of truth.
 
-A request can be converted into a project, task, or issue, depending on the organization's configuration and process.
+Where you use it
+In the API. Every request has the code in it, so Workfront knows which object you mean.
+In Fusion. Most of the time you click ready-made modules, but sometimes you write the request yourself, and then you type the code.
+In webhooks. When you say “tell me when something changes,” you also say what type of thing to watch, using the code.
 
----
-
-## 3. Real-World Example
-
-**Scenario:** A marketing team wants to launch a new product campaign.
-
-1. Request: The team submits a campaign brief.
-2. Approval: The appropriate person reviews it.
-3. Project: The campaign work is organized.
-4. Tasks: Design, copywriting, and review activities are assigned.
-5. Completion: The team tracks progress and delivers the campaign.
-
-The exact workflow depends on the company's Workfront configuration.
-
----
 
 ## 4. Interview Questions
 
@@ -107,12 +128,4 @@ Request = Submitted need for work
 
 Main benefits = Organization + Assignment + Tracking + Approvals + Reporting
 
----
 
-## 6. Self-Assessment
-
-- [ ] I can explain what Workfront is in my own words.
-- [ ] I can explain why companies use Workfront.
-- [ ] I can distinguish a project, task, issue, and request.
-- [ ] I can explain a simple marketing workflow.
-- [ ] I can answer the interview questions without looking at my notes.
