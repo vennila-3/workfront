@@ -1,0 +1,118 @@
+# Day 1 — Adobe Workfront Fundamentals
+
+## Learning Objectives
+
+By the end of this lesson, I should be able to:
+- Explain what Adobe Workfront is.
+- Understand why organizations use Workfront.
+- Identify the basic Workfront objects.
+- Explain the difference between projects, tasks, issues, and requests.
+- Answer basic Workfront interview questions.
+
+---
+
+## 1. What Is Adobe Workfront?
+
+Definition: Adobe Workfront is a work management platform that helps organizations plan, organize, assign, track, and complete work in one centralized place.
+
+Why Do Companies Use Workfront?
+
+- Centralize work management.
+- Assign work to team members.
+- Track project progress and deadlines.
+- Manage requests and approvals.
+- Generate reports and dashboards.
+- Improve collaboration and visibility.
+
+Interview Question: What is Adobe Workfront?
+
+Answer: Adobe Workfront is a work management platform that helps organizations centralize and organize their work. It enables teams to manage projects, assign tasks, track progress and deadlines, handle requests and approvals, and generate reports.
+
+---
+
+## 2. Basic Workfront Objects
+
+
+| Project | Organizes a larger body of work ----- Launch a marketing campaign 
+| Task | Represents an individual activity ------ Design a campaign banner 
+| Issue | Tracks work or a problem requiring attention ------- Correct an incorrect banner 
+| Request | Captures a need for work through a configured process -------- Submit a campaign brief 
+
+Quick Memory Tip
+
+- Project = Overall work
+- Task = Activity
+- Issue = Work or problem requiring attention
+- Request = Submitted need for work
+
+### Important Note
+
+A request can be converted into a project, task, or issue, depending on the organization's configuration and process.
+
+---
+
+## 3. Real-World Example
+
+**Scenario:** A marketing team wants to launch a new product campaign.
+
+1. Request: The team submits a campaign brief.
+2. Approval: The appropriate person reviews it.
+3. Project: The campaign work is organized.
+4. Tasks: Design, copywriting, and review activities are assigned.
+5. Completion: The team tracks progress and delivers the campaign.
+
+The exact workflow depends on the company's Workfront configuration.
+
+---
+
+## 4. Interview Questions
+
+**Q1. What is Adobe Workfront?**
+
+A: A work management platform used to plan, organize, assign, track, and manage work centrally.
+
+**Q2. Why do organizations use Workfront?**
+
+A: To manage projects, tasks, requests, approvals, deadlines, collaboration, and reporting in one place.
+
+**Q3. What is a project?**
+
+ A project organizes a larger body of work with activities, responsibilities, and timelines.
+
+**Q4. What is a task?**
+
+A: A task is an individual activity that needs to be completed.
+
+**Q5. What is an issue?
+
+A: An issue tracks work or a problem that needs attention.
+
+**Q6. What is a request?**
+
+A: A request captures a need for work through a configured request process.
+
+
+
+## 5. One-Minute Revision
+
+Workfront = Centralized work management
+
+Project = Overall work
+
+Task = Individual activity
+
+Issue = Work or problem requiring attention
+
+Request = Submitted need for work
+
+Main benefits = Organization + Assignment + Tracking + Approvals + Reporting
+
+---
+
+## 6. Self-Assessment
+
+- [ ] I can explain what Workfront is in my own words.
+- [ ] I can explain why companies use Workfront.
+- [ ] I can distinguish a project, task, issue, and request.
+- [ ] I can explain a simple marketing workflow.
+- [ ] I can answer the interview questions without looking at my notes.
