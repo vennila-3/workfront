@@ -1,0 +1,183 @@
+Week 1: Foundations, users and access
+Foundations and structure
+ Object hierarchy: portfolio, program, project, task, subtask, issue ★★★
+ Object codes (PROJ, TASK, OPTASK etc.), needed for the API ★★★
+ Navigation, global search, personal dashboard, "My work" ★
+ Instances: production, sandbox, preview, and how changes move between them ★★
+Users and access
+ Users and license types (Plan, Work, Review, Request) ★★★
+ Roles, job roles, teams, groups, companies ★★★
+ Access levels, sharing, object permissions, permission inheritance ★★★
+ How a custom access level set is built; sharing vs. access levels ★★★
+ SSO (SAML), IP allowlisting and user provisioning ★
+
+
+Week 2: Project management
+ Project lifecycle, statuses, conditions, custom statuses ★★★
+ Templates: project templates, task templates, attaching templates ★★★
+ Task dependencies, constraints, durations, lag, critical path ★★
+ Scheduling modes, planned vs. actual hours, progress, percent complete ★★
+ Baselines ★
+ Milestones and task assignments (users, teams, roles) ★★
+ Work schedules, holidays, non-work days, time zones ★★
+ Gantt and calendar views ★
+ Task priority and reminders ★
+
+
+Week 3: Agile, requests and issues
+Agile in Workfront
+ Agile teams, iterations, stories, backlogs ★★
+ Kanban and Scrum boards ★★
+Requests and issues
+ Request queues, queue topics, routing rules, queue permissions ★★★
+ Issues, and converting an issue to a task or project ★★★
+ Request forms, using custom forms in queues ★★★
+
+
+Week 4: Approvals, documents and notifications
+ Approval processes (project, task, issue, document) ★★★
+ Documents, versions, folders, document approvals ★★
+ Document providers: Box, Google Drive, SharePoint, Adobe Creative Cloud connections ★★
+ Workfront Proof (annotations, proof stages, approvals) ★★
+ Updates, notes, notifications, @mentions ★
+ Notification and email templates ★
+
+
+Week 5: Resource, time and cost
+Resource and time
+ Timesheets and hour types ★★
+ Resource planning, workload balancer, capacity ★★
+ Resource pools and allocations ★
+Budget and cost
+ Planned vs. actual cost ★
+ Rate cards ★
+ Expenses and billing records ★
+
+
+Week 6: Customization
+ Custom forms, custom fields, form designer ★★★
+ Custom form field types: dropdown, typeahead, multi-select, rich text, sections ★★★
+ How custom forms are inherited in templates ★★★
+ Calculated fields (expressions) ★★★
+ Form logic: conditional fields, show/hide ★★
+ Categories, parameters, and how they differ ★★★
+ Custom statuses, custom menus ★★
+
+
+Week 7: Reporting and UI customization
+ Views, filters, groupings, layout templates ★★★
+ Reports (task, project, issue, hour reports etc.) ★★★
+ Text mode: filters, groupings, calculated columns ★★★
+ Dashboards and Canvas dashboards ★★
+ Scheduled report delivery ★
+
+
+Week 8: Workfront Planning
+ Workspaces and workspace templates ★★★
+ Record types: global, connectable; operational vs. taxonomy ★★★
+ Records, fields, record layout ★★★
+ Connected record types, records and fields, plus lookup fields ★★★
+ Connecting Planning records to Workfront objects ★★★
+ Views: table, timeline, calendar; sharing views ★★
+ Permissions: workspace, record type, record, view ★★
+ Cross-workspace setup details ★★
+ Request forms for record types ★★
+ Planning automations ★★
+ Record comments and history ★
+ AI Assistant for Planning ★
+ Planning vs. classic Workfront: when to use which ★★★
+
+
+Week 9: Other product areas and admin
+Other product areas
+ Workfront Goals ★
+ Blueprints ★
+ Scenario Planner (if your org has it) ★
+ Portfolio and program management, health indicators ★★
+ Integration concepts with Adobe Experience Manager and Assets ★★
+ Workfront mobile app ★
+Admin and setup
+ System settings, security, audit trail ★★
+ Data import, bulk updates, exports ★★
+ Sandbox practice and change management ★★
+ Notifications and email setup ★
+
+
+Week 10: Workfront API
+ Object model: objCode, fields, relationships ★★★
+ REST basics, authentication (API key, OAuth) ★★★
+ OAuth 2 flow types, generating and rotating API keys ★★
+ API versions and how to pick one ★★
+ Search, create, update, delete calls ★★★
+ Filters, fields, and custom form fields in calls ★★★
+ DE: and DF: prefixes for custom form fields in API calls ★★★
+ Batch calls and bulk updates through the API ★★
+ Pagination and limits ★★
+ Rate limits and error codes ★★
+ Event subscriptions (webhooks) ★★★
+ API Explorer ★★
+ Postman practice and debugging responses ★★
+Developer skills (about 20 min a day)
+ REST concepts and HTTP status codes ★★★
+ Postman ★★
+
+
+Week 11: Integrations and Fusion fundamentals
+Integrations
+ Common patterns: Jira, Salesforce, Slack, Teams, AEM ★★
+ Native integrations vs. Fusion vs. custom API: when to choose which ★★
+Fusion fundamentals ★★★
+ Scenarios, modules, triggers, actions, searches
+ Bundles and operations (and how they affect usage)
+ Connections and scheduling
+ Mapping and data types
+ Built-in functions (text, date, array)
+ Filters and routers
+ Iterators and aggregators
+Workfront modules ★★★
+ Watch events and webhooks
+ Create, update, search and read modules
+ Custom API call and HTTP module
+ Custom form fields in mappings
+Developer skills (about 20 min a day)
+ JavaScript basics and JSON ★★★
+
+
+Week 12: Fusion reliability, advanced topics and builds
+Reliability ★★★
+ Error handling directives: ignore, resume, rollback, break, commit
+ Incomplete executions and retries
+ Execution history and debugging
+ Rate limits and pagination for large data volumes
+Advanced ★★
+ Data stores and variables
+ JSON parsing and creation
+ Regular expressions
+ Custom apps
+ Scenario organization, folders, and team management
+ Scenario cloning, import/export, and moving scenarios between environments
+ Webhook security and signature checking
+ Fusion with AI features and other Adobe apps (AEM, Adobe Sign, Creative Cloud connectors)
+Builds to practice
+ Approved request creates a project and notifies Slack
+ Jira-to-Workfront sync
+ Scheduled status report
+ Planning to Workfront scenario
+Developer skills (about 20 min a day)
+ JavaScript basics and JSON, continued ★★★
+
+
+Week 13: Revision, developer skills and interview prep
+Revision
+ Re-do every ★★★ item from Weeks 1-12 and note weak areas
+ Re-do the four Fusion builds without looking at your notes
+ Compare this list with the official Adobe Workfront developer certification study guide and add anything missing
+Developer skills
+ Java refresh for the migration project ★★
+ Git basics ★
+Interview prep
+ Write your question bank (about 100 questions) and answer them out loud ★★★
+ Write each past project as a story: problem, approach, result ★★★
+ Practice scenario questions, for example "a Fusion scenario failed halfway through creating 200 projects, how do you recover?" ★★★
+ Complete 3-4 mock interviews ★★★
+ Update resume and LinkedIn (lead with Adobe Workfront Certified Developer) ★★
