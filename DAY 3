@@ -1,0 +1,117 @@
+                                                                      Concept 1: Users and license types
+What a user is
+A user is a person who has a login to Workfront. Every designer, developer, manager and approver in a company is a user, and each one has a profile with their name, email, job title and so on.
+Workfront also remembers who did what. Every task, comment, approval and logged hour is tied to a user.
+
+                                                                       license types
+License	What the person can do	Example person
+Plan (called Standard in newer Adobe documentation)	---    Create and manage projects and plan the work. The most powerful type.	Project manager 
+Work	--- Do assigned tasks, update status, log hours. Cannot plan projects.	Designer, developer
+Review -------	See things and add comments or approvals. Cannot do project work.	Stakeholder who approves designs
+Request ------	Submit requests and track their own requests only.	Sales person asking marketing for a page
+
+
+A license type decides what kind of work a user can do in Workfront. Plan users can create and manage projects, Work users do assigned tasks and log time, Review users comment and approve, and Request users submit requests.
+
+Why this matters
+Cost. Companies pay for each license, and Plan licenses cost more. They give them only to people who need to plan.
+Safety. A requester can’t accidentally change a project.
+Your job. When you build forms, request queues and automations, you must know who can do what. For example, if a form is meant for requesters, a person with only a Review license will not be able to use it.
+
+
+                                                                     Access Level
+
+An access level is a set of rules assigned to a user by an admin. For each type of object (project, task, issue, document, report and so on), it lists which actions the user is allowed to do: view, create, edit, delete and so on.
+It is about the user’s capabilities, and it applies to all objects of that type.
+
+Example: “This user’s access level lets them edit projects, but not delete them.”
+
+
+Access level         	Attached license
+System Administrator	Standard license
+Standard	            Standard license
+Light	                Light license
+Contributor         	Contributor license
+External	            No paid license
+
+                    System Administratorm                                        Standard
+Scope	              The whole system	                                        A limited set of access per object type
+What it can do    	“Everything within Workfront”	                            Plan and track projects, automate routine processes, manage resources and collaborate
+Objects	            Can view and edit all objects entered by all users	      Only what its object-type settings and sharing permissions allow
+Setup          	    Full Setup access, can change any system-level setting	  Not described as having Setup access
+Main menu	           All areas                                                Depends on the settings
+
+                                                                    Permission
+
+A permission is a setting on one specific object. It says who can access that object (a user, team, group, job role, company or everyone) and at what level: View, Contribute or Manage.
+It is about access to one object.
+
+Example: “The project ‘Diwali landing page’ is shared with the Website Team at Contribute.”
+
+Permission	  What it allows
+View	        See the object, add documents, see cost, billing and general finance information, and share it (only up to their own level)
+Contribute	  Everything in View, plus add expenses and tasks (on projects), edit custom forms, log hours and make assignments
+Manage	      Everything in View and Contribute, plus delete the object and manage cost rates, billing rates and finance data
+
+mostly contribute and manage are same diff is contributor cant do these 2 things but manage has do 
+Delete the object
+Manage cost rates, billing rates and finance data
+
+
+                      Access level vs permission
+Set on     	The user	                                   The object
+Applies to	All objects of a type (every project)	       One object (this project)
+Set by	    An admin	                                    Someone who has Manage on that object
+
+
+License	 ---------	What type of user is this?	 Plan, Work, Review, Request	
+Access level -----   What actions can this user do on each object type? A set of actions per object type (view, create, edit, delete...)	
+Permission  ---------What can this user do on this specific object? View, Contribute, Manage (plus custom)
+
+
+
+                                                                   Job roles, teams, groups and companies
+
+1. Job role
+
+A job role is the type of work a person does. It is a label like Designer or QA Tester.
+Why it matters:
+A project manager can assign a task to the role Designer instead of to a specific person, and decide who does it later.
+It helps with planning. If a project needs 3 designers and you only have 2, the role shows the gap.
+
+2.Team
+
+A team is a set of people who work together on the same work, for example the “Website Team.”
+Why it matters:
+You can assign a task to the whole team, and anyone on the team can pick it up.
+A team can have its own request queue or its own view of the team’s work.
+
+Remember: A team is about working together. A person can be on several teams.
+
+3. Group
+It represents a unit in your company’s organizational structure.Its job is to place every user and many other objects somewhere in the company hierarchy.
+
+Sharing. You can share an object (a report, dashboard, project, template and so on) with a group, and the members of that group get the access you set. This avoids adding people one at a time.
+Reports and filters. Because every user sits in one home group, you can filter and group data by department, like “hours logged by Marketing” or “projects owned by IT.”
+Assigning objects to a group. Objects such as projects can also carry a group, which lets you report on work by department.
+Why it matters:
+Groups are used for sharing and permissions. You can share a report or project with a whole group in one step.
+They are also used for reporting, such as hours by department.
+
+Remember: A group is about where someone sits in the organization, and a team is about who they work with. They can be different. Someone from the IT group may sit on the Website Team.
+
+
+4. Company
+A company is the organization a user, project or object belongs to. If your business works for clients, each client can be a company, and the projects for them are linked to it. Your own organization is also a company.
+Why it matters: It lets you separate and report by organization, for example “show me all projects for Acme Foods.”
+
+Interview questions
+. What is the difference between a team and a group?
+A team is people who work together on the same work, like the “Website Team.” You can give a task to the whole team. 
+A user can be on many teams, and a team has many users. (many-to-many)
+
+Group:
+A Group is an organizational structure in Workfront used to manage users and apply group-level settings and preferences.
+Groups are mainly used for sharing and reports.A user has one home group. One group has many users. (one-to-many)	
+
+
