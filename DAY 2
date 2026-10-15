@@ -1,1 +1,77 @@
+                                                                           Navigation part 
 
+Purpose
+The home page is the first screen after login. It gives you a quick summary of your own work: your projects, your to-dos, your approvals and your assigned work. It can be customized, and the layout may differ between companies and versions.
+Sections on the home page
+
+Section	What it shows	Useful to know
+
+My Projects	A list of your projects with name, owner, status, due date and last update.	Two tabs: Projects I Own and Projects I'm On. Statuses seen: Idea, Planning, Current. Has New, Filter, Columns and Grouping options.
+Mentions	Comments where someone tagged you with @.	Empty until someone mentions you.
+To-dos	Your personal checklist of small reminders.	Only you see these. They are not formal project tasks. Add one with Add to-do.
+My Approvals	Items waiting for your sign-off.	Has a Delegate approvals option for when you are away.
+My Work	Tasks and issues assigned to you.	Can be filtered and sorted by due date. Shows a message to change filters when nothing matches.
+Customize button	Top right of the banner. Lets you change the home page.	Only changes your own view.
+Notifications (bell icon)	Alerts such as new assignments, status changes and mentions.	A red mark means unread notifications.
+
+
+Before you make changes
+Check the instance name at the top right of the screen. If it says Production, you are in the live system. Avoid creating, editing or deleting things there unless you know it is safe, and practice in a sandbox where possible. Changing your home page layout only affects your own view.
+
+                                                                           
+                                                                            Global search(it is in home page search tool)
+What it is
+A search box that finds things across all of Workfront: projects, tasks, issues, documents, users and more. In your screenshot, the magnifying glass icon at the top right looks like where it lives.
+Think of it as the search bar in your phone’s contacts. You type a few letters and get the match, without scrolling through everything.
+
+Why it matters
+In a real company there are hundreds or thousands of projects and tasks. Nobody browses through menus to find one. As a developer you’ll use search constantly to:
+Find a project or task quickly by name.
+Check whether something you created in a test actually exists.
+Find an object’s ID, which you need for API calls and Fusion scenarios.
+
+How to use it (10 minutes)
+Click the search icon and type part of a project name, for example “Media” to find “Copy of Media Buying.”
+Look at the results. They’re usually grouped by type: projects, tasks, documents, users. Notice that this grouping is the same object idea from Day 1.
+Search for a task name or a person’s name and see how the results change.
+Open a result. Look at the web address in your browser and find the long ID in it. That ID is how Workfront identifies that object, and you’ll need IDs when we reach the API.
+
+
+Tips
+Search works best with a distinctive word from the name. Very short or very common words return too much.
+If you can’t find something you know exists, you may not have access to it. Workfront only shows what you’re allowed to see (we cover permissions in Week 1).
+Quick check
+
+
+
+                                                                          My works
+
+My work is the list of everything assigned to you: tasks, issues, and other items you need to act on. It’s the personal to-do list built from your real project work.
+On your home page, it’s the My Work box at the bottom left. There’s also usually a full “My work” page in the main menu with more room.
+
+How it differs from To-dos
+To-dos	My work    Who creates it	You
+Part of a project?	No	Yes
+Who sees it	Only you	
+
+A rule of thumb: To-dos are your private notes. My work is official project work.
+
+What you can do from it
+Open an item and read its details and instructions.
+Update the status or progress, such as marking a task complete.
+Add a note or comment to ask a question or give an update.
+Log hours spent on it.
+Sort and filter by due date, project or status, which is the search box and Due Date sort you saw on your screen.
+
+
+                                                                    What an instance is
+An instance is a separate environment of Adobe Workfront used for a particular purpose.
+An instance is one separate copy of Workfront. Companies usually have more than one copy, because they don’t want to practice on the real system.
+
+Production ---- The live system with real users and real work	Everyone, every day
+Sandbox	 ------ A test copy for safe experiments	Developers and admins
+Preview	 ------ A test copy that gets new Adobe features before production	Admins checking what is coming
+
+
+What is the difference between sandbox and preview?
+Sandbox is for testing your own changes. Preview is run by Adobe so customers can see upcoming features before they reach production.
