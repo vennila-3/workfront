@@ -23,7 +23,7 @@ Your job. When you build forms, request queues and automations, you must know wh
 
 An access level is a set of rules assigned to a user by an admin. For each type of object (project, task, issue, document, report and so on), it lists which actions the user is allowed to do: view, create, edit, delete and so on.
 It is about the user’s capabilities, and it applies to all objects of that type.
-
+we can able to create custom access level setup->access level 
 Example: “This user’s access level lets them edit projects, but not delete them.”
 
 
@@ -41,6 +41,16 @@ Objects	            Can view and edit all objects entered by all users	      Onl
 Setup          	    Full Setup access, can change any system-level setting	  Not described as having Setup access
 Main menu	           All areas                                                Depends on the settings
 
+
+                                                                 Custom access levels
+Definition: A custom access level is an access level that an administrator creates by copying a built-in one and changing its settings to fit a need in the company.
+Custom access level = a built-in access level, copied and adjusted.
+
+Why companies need it
+The built-in levels (Standard, Light, Contributor) are the same for everyone. But a company may want something in between, for example:
+“Standard, but can’t see planned and actual hours.”
+“Standard, but can’t delete comments.”
+“Standard, but only sees companies, groups and teams they belong to.”
                                                                     Permission
 
 A permission is a setting on one specific object. It says who can access that object (a user, team, group, job role, company or everyone) and at what level: View, Contribute or Manage.
@@ -69,6 +79,46 @@ Access level -----   What actions can this user do on each object type? A set of
 Permission  ---------What can this user do on this specific object? View, Contribute, Manage (plus custom)
 
 
+
+                           Sharing, Object Permissions, and Inheritance
+
+Sharing  ----------- Sharing is the action of giving other people access to an object. When you share an object, you choose who gets access and what level they get.
+Object Permissions -------Object permissions determine what a person can do with a particular object.
+
+
+
+Permission Inheritance---------- Permission inheritance means that access granted to a parent object can flow to its child objects.
+If you give a user Contribute access to the project, they normally inherit Contribute access to its tasks and issues.
+
+Example:
+Parent: Project
+Children: Tasks and issues
+A user given Contribute access to a project can inherit Contribute access to its tasks and issues, subject to Workfront's permission rules.
+
+
+2. Access Levels vs. Sharing
+
+Access Level ---An access level defines a user's general capabilities across Workfront object types and system areas.
+Sharing -------Sharing grants permissions on an individual object.
+
+
+1. Direction of inheritance
+Permissions can flow from parent to child, not automatically from child to parent.
+Example: Project → Task.
+
+2. Direct vs. inherited permissions
+A user can receive access directly on a task or inherit access from its parent project. Both can affect their effective permissions.
+
+3. Access levels still matter
+Inherited or directly granted permissions don't override restrictions imposed by the user's access level.
+
+4. Inheritance can be adjusted
+Workfront supports removing inherited permissions on supported objects. Other direct or applicable permissions may still grant access.
+
+contributor access + view permission = view only 
+
+                      
+Interview reminder: Always evaluate the user's access level, object permissions, and any applicable inherited or direct permissions before deciding what they can do.
 
                                                                    Job roles, teams, groups and companies
 
@@ -113,5 +163,7 @@ A user can be on many teams, and a team has many users. (many-to-many)
 Group:
 A Group is an organizational structure in Workfront used to manage users and apply group-level settings and preferences.
 Groups are mainly used for sharing and reports.A user has one home group. One group has many users. (one-to-many)	
+
+
 
 
