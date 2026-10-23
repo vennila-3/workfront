@@ -1,0 +1,158 @@
+Week 2: Project management
+
+
+Project status
+Project condition (On Target, At Risk, In Trouble) and custom statuses
+Project templates
+Tasks: dependencies, constraints, durations, lag, critical path
+Scheduling: planned vs actual hours, progress, percent complete
+Milestones and task assignments
+Work schedules, holidays and time zones
+Baselines, Gantt and calendar views, priority and reminders (lower priority)
+
+
+
+                                                                     Project Templates in Adobe Workfront
+
+A Project Template is a reusable structure used to create projects with predefined tasks, durations, assignments, and other project details.
+
+                                                                      what is project ?
+
+A project is one defined piece of work with a start, an end, an owner and a set of tasks, tracked in Workfront from beginning to finish.
+Project = one piece of work, with a goal, a timeline, people and tasks.
+It is the place where work is actually planned and managed. Portfolios and programs only group projects together for reporting.
+
+
+What a project holds
+
+Basic details	----->Name, owner, description, planned start and end dates
+Status and condition	----->	The stage it is in, and how healthy it is
+Tasks		----->The planned steps, with dates, dependencies and assignees
+Issues	----->	Unplanned problems logged against it
+Documents		----->Files, such as the design for review
+Updates and notes		----->The conversation about the project
+Hours and expenses		----->Time logged and money spent
+Approvals		----->Formal sign-offs
+Custom form data	----->	Extra fields your company added
+
+How a project is created?   there are 4 ways to create project : The project starts as an Idea expect request project type of creation (for request type status as request )
+1)new project ----- You create a blank project and build everything yourself.
+2)new project from template -- You create a project from a ready-made pattern that already contains tasks, custom forms and sharing settings.
+3)import from ms project  --You bring an existing plan from Microsoft Project into Workfront. import from our local .xml file type
+4)request project -- Request project is a way of creating a project that needs approval from management before any work starts.     Request project = “I want to do this project. Please approve it first.”
+
+
+Who is involved
+Project owner: the person responsible for it, usually the project manager.
+Assignees: the people who do the tasks.
+Sponsor and stakeholders: people who care about the result and may approve.
+
+
+                                                                      what is project Status?
+A project status that tells you which ***** stage  *** of its life the project is in. Every project has one status at a time, and you change it as the project moves forward.
+Status = the stage of the project.
+
+we can use status in 2 ways :
+1) in-build
+2)custom status creation 
+
+Custom statuses ---> Companies can add their own statuses, such as “In Design Review.” Key points
+who can create the status of project ?
+System Administrators can create or edit custom statuses for the whole system.
+Group administrators can create statuses for their own groups.
+
+how to create?
+Main Menu--> Setup--> Project Preferences-->Statuses.
+
+What statuses are there
+Workfront has nine built-in ones. Here they are in the order a project usually moves through:
+Statuses are there : Workfront has nine(9) built-in ones.
+
+Idea	---> Someone thought of or asked for the project. Nothing is planned
+Requested --->	A business case was submitted, and it is waiting for approval
+Approved --->	Management said yes
+Rejected --->Management said no
+Planning --->	The project manager is building the plan
+Current	 --->Work is going on now
+On Hold	 --->Work is paused for a while
+Dead	 --->Abandoned, it will never finish
+Complete --->	Everything is done   As we saw earlier, a project becomes Complete either manually or automatically, depending on its completion mode. (before closing task and issue are should be complete 100%)
+
+
+planning vs current 
+
+Stage	Setup  ---	Work underway
+Who builds what	The project manager sets up the timeline, task assignments and approvals  ---	The team does the tasks
+Tasks in team members’ Work Lists	Not shown                                               ---	Shown
+Notifications	None sent                                                                    --- Sent
+Timeline calculation	Not calculated by the system	                                       ---Can be calculated automatically
+
+
+                                                                          Project condition
+
+The condition of a project shows ***how well the project is going***: on track, in danger, or in serious trouble.
+Condition = the health of the project.
+
+The three standard values:
+On Target	 ----> The project is on track
+At Risk	----->Something could cause a delay or problem if it is not addressed.  -- Example: The client has not approved the design, so development might be delayed.
+In Trouble --->The project has a serious problem that may prevent it from meeting its deadline or objectives. -- : Development is significantly delayed, and the launch date is likely to be missed.
+
+How the condition is set
+
+Progress status(Automatic)	----->- Workfront determines the condition based on the project's progress compared with its planned schedule.
+Manual	 ---> A person with permission to manage the project sets it themselves
+
+One rule
+Projects in the Idea, Requested, Approved and Rejected statuses always show On Target, whatever the dates are. The condition only means something once real work starts.
+
+
+                                                                    Progress status
+
+Progress status is a field that tells you whether the work is on schedule or not. Workfront calculates it automatically by comparing the dates. You don’t set it by hand.
+
+On Time	------->Work is on schedule
+Behind	------->Work is slipping behind the plan
+At Risk	------->Work may miss its date
+Late	--------->The date has been missed
+
+diff between progress vs condition?
+
+Progress status is the measurement. Workfront calculates it from the dates.
+Condition is the health signal people see and report on. It is based on the measurement when automatic, or set by a person when manual.
+
+                                                                       Task Dependencies
+A task dependency is a rule that says one task cannot start (or finish) until another task does. The task that must come first is called the predecessor
+
+it has two main parts
+Predecessor: the task that must happen first. Another task depends on it.
+Successor: the task that must wait. It can only go ahead after its predecessor.
+
+Write the email	Predecessor	It comes first
+Send the email	Successor	It waits for the writing to be done
+
+The four dependency types:
+1)Finish-to-Start (FS) : the successor starts only after the predecessor finishes.
+Example: 2FS+4d means  FS	The type is Finish-to-Start (this task starts after task 2 finishes)  +4d	Add 4 days of waiting (lag) after it finishes
+
+2)Start-to-Start (SS) : the successor can start once the predecessor has started. It does not have to wait for the predecessor to finish.
+Predecessor starts → then successor can start.
+
+3)Finish-to-Finish (FF) : The successor can finish only after the predecessor has finished. The two tasks can run together, but they must end in the right order.
+Predecessor finishes → then successor can finish.
+
+4)Start-to-Finish (SF) : the successor can finish only after the predecessor has started.
+Predecessor starts → then successor can finish.
+
+Type	 Predecessor	   Successor	   Controls
+FS	  finishes	      then starts	   Successor’s start
+SS	  starts	        then starts	   Successor’s start
+FF	  finishes	      then finishes	 Successor’s finish
+SF	  starts	        then finishes	 Successor’s finish
+
+
+
+                                                                Task constraint
+
+A task constraint is a rule about one task’s dates. It limits when the task is allowed to start or finish.
+Constraint = a date rule on a single task.
