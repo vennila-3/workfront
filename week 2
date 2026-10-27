@@ -151,8 +151,53 @@ FF	  finishes	      then finishes	 Successor’s finish
 SF	  starts	        then finishes	 Successor’s finish
 
 
+Dependency = waiting for a task.
+Constraint = waiting for a date.
 
                                                                 Task constraint
 
-A task constraint is a rule about one task’s dates. It limits when the task is allowed to start or finish.
-Constraint = a date rule on a single task.
+A task constraint is a rule about one task’s dates.   Constraint = a date rule on a single task.
+What the constraint fixes : You add a constraint to the task: “Don’t start before Nov 1.
+
+The map: three families
+Family	                         Types	                    What they do
+Flexible (no date typed in)	    ASAP, ALAP, EAT, LAT	      Workfront decides the dates from the plan
+Date limits (you type a date)  	SNET, SNLT, FNET, FNLT    	Set a “not earlier than” or “not later than” limit
+Exact dates (you type a date) 	MSO, MFO,Fixed Dates	      Pin the task to a precise date
+
+
+As Soon As Possible	ASAP : As early as possible
+Workfront places the task’s start as early as it can, as close to the beginning of the project as possible.
+
+As Late As Possible	ALAP	:As late as possible
+Workfront places the task as close to the end of the project as it can, so the task is done as late as the plan allows.
+
+Earliest Available Time	EAT :
+Schedules a task to begin at the earliest available time after considering any predecessor relationships.
+
+Latest Available Time	LAT :	
+Schedules a task to begin at the latest available time after considering predecessor-successor relationships in the project.
+
+Start No Earlier Than	SNET	: 
+the task can’t start before the date you set. Example Doors open no earlier than 10 a.m.” Opening at 10:00 or 10:30 is fine. Opening at 9:00 is not.
+
+Start No Later Than	SNLT	:
+the task must start on or before the date you set. It can’t start after that date. The bus leaves at 8. You must board no later than 8
+
+Finish No Earlier Than	FNET :
+the task can’t finish before the date you set
+
+Finish No Later Than	FNLT	: 
+the task can’t finish after the date you set
+
+Must Start On	MSO	 :
+the task must start exactly on the date you set. Not earlier, not later.
+
+Must Finish On	:
+the task must finish exactly on the date you set. Not earlier, not later.
+
+Fixed Dates	FIXT	: 
+Schedules a task to start and end on specific dates.
+
+Earliest Available Time (EAT):
+the task starts at the earliest open point after its predecessors have been considered.
