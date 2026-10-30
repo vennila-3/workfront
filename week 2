@@ -173,7 +173,7 @@ As Late As Possible	ALAP	:As late as possible
 Workfront places the task as close to the end of the project as it can, so the task is done as late as the plan allows.
 
 Earliest Available Time	EAT :
-Schedules a task to begin at the earliest available time after considering any predecessor relationships.
+the task starts at the earliest open point after its predecessors have been considered.
 
 Latest Available Time	LAT :	
 Schedules a task to begin at the latest available time after considering predecessor-successor relationships in the project.
@@ -199,5 +199,40 @@ the task must finish exactly on the date you set. Not earlier, not later.
 Fixed Dates	FIXT	: 
 Schedules a task to start and end on specific dates.
 
-Earliest Available Time (EAT):
-the task starts at the earliest open point after its predecessors have been considered.
+Family	      Types	Date               typed by you?
+Flexible	    ASAP, ALAP, EAT, LAT	   No
+Date limits   SNET, SNLT, FNET, FNLT	 Yes
+Exact dates	  MSO, MFO, FIXT	         Yes
+
+
+
+                                                                Task duration
+
+A duration is how long a task takes to complete, from its start to its finish.exclude weekends, holidays and time off. They count working time only.
+Duration units : A duration needs a unit, which says what kind of time the number means. “4” alone is not enough. Is it 4 days, 4 hours or 4 weeks?
+
+Letter	  Unit
+M       	Minutes
+H        	Hours
+D	        Days   Days is the default.
+W       	Weeks
+MO (or T)	Months
+
+How the duration and the dates work together
+A task has three connected numbers: a start date, a duration and a finish date. If you know two of them, Workfront can work out the third.
+Start + duration → finish
+
+Elapsed duration
+Elapsed duration counts every calendar day, including weekends and holidays. It is time passing on the clock, not working time.
+
+Regular duration = working time only.
+Elapsed duration = all calendar time.
+
+Unit 
+EM(minute), EH(Hour), ED(Day), EW(Week), ET(month)
+
+Duration       entered	   How it counts	             Finish
+2D (regular)	 Fri,       then Mon (weekend skipped)	 Monday
+2ED (elapsed)	 Fri,       then Sat (weekend counted)	 Saturday
+
+
