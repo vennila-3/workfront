@@ -236,3 +236,13 @@ Duration       entered	   How it counts	             Finish
 2ED (elapsed)	 Fri,       then Sat (weekend counted)	 Saturday
 
 
+Duration types:
+task identifies the relationship between the number of resources assigned to a task, the total effort, and the total Duration of the task.
+
+Duration type = the rule that links planned hours and duration.
+
+Type	                        One-line meaning (from Adobe’s overview page) 
+Simple	                      Makes planned hours and duration the same, based on the hours allocated to each assignee .   planned hours = duration 
+Effort Driven	Works           the duration stays fixed and planned hours are recalculated when assignees added to task (if i added another 2 person to same task duration doesnt change)
+Calculated Work	Works         Calculated Work calculates the planned hours. If I add assignees, the planned hours change
+Calculated Assignment	        allocation percentage is calculated from planned hours, duration and assignees.
