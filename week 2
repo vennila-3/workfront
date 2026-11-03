@@ -281,3 +281,30 @@ Float: “Float is how long a task can slip without delaying the project. Critic
 Where: “In the Gantt chart, through the Options icon and Critical Path, where critical tasks get a red line. And in the task list, as a Critical Path flag in the Flags column.”
 Needs: “Tasks with durations and dependencies, because the path is calculated from them.”
 
+                                              Scheduling,
+Planned hours = are the hours of work a task is estimated to need. It is an estimate made before the work starts.
+actual hours = Actual hours are the hours people really worked on a task. Actual hours = how much work really happened.
+
+                                              progress (project condition)
+Progress says how much of a task is done so far.
+Why we need it : Planned hours and actual hours tell you about effort. Neither one tells you how much of the task is complete.
+16 planned hours, 12 logged, and the task is 20% done (progress)
+Progress Status	: On Time,At Risk	,Behind	,Late
+
+Field	Can you manually change it?
+Project Condition (Manual mode)	Yes, an authorized user can change it.
+Project Condition (Progress Status mode)	Workfront calculates it from Progress Status.
+
+                                           percent complete
+Percent complete is progress written as a percentage, from 0% (not started) to 100% (done).
+A task’s percent complete is set manually.
+
+	             Progress status	                   Condition
+What it is	 A schedule measurement	               A health indicator
+Values	     On Time, Behind, At Risk, Late	       On Target, At Risk, In Trouble
+Who sets it	 Always Workfront                     	Workfront (automatic) or a person (manual)
+Can a person change it?	No                        	Yes, when the condition is manual
+
+On Time → On Target, Behind → At Risk, Late → In Trouble.
+
+
