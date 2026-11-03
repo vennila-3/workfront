@@ -246,3 +246,38 @@ Simple	                      Makes planned hours and duration the same, based on
 Effort Driven	Works           the duration stays fixed and planned hours are recalculated when assignees added to task (if i added another 2 person to same task duration doesnt change)
 Calculated Work	Works         Calculated Work calculates the planned hours. If I add assignees, the planned hours change
 Calculated Assignment	        allocation percentage is calculated from planned hours, duration and assignees.
+
+
+                                                     Lag
+
+
+lag is the time that must pass between a predecessor’s end and the start of the task that depends on it.
+Lag = a waiting gap between two linked tasks.
+Lag	Effect	Written as
+Positive	Successor starts after a gap	2FS+4d
+Negative	Successor can start before the predecessor ends (overlap)	2FS-2d
+
+ lag types
+
+
+Type	          Code	         How the gap is counted
+Days (default)	d	             Working days. Weekends don’t count.
+Calendar Days 	c	             Every day, including weekends and holidays(Saturday and Sunday)
+Percent	        p              A percentage of the predecessor’s duration  ( start the next phase once the first one is half done)(2fs+25p) means after 25%work done on predecessor
+Day of Week    	w	             the number you type is a weekday number, not a count of days.  4fs+7w it means 7w(saturday)
+Day of Week Non Zero	k	       Like Day of Week, but the lag can never be zero. The successor never starts on the same day the predecessor finishes. +5k	The lag can’t be zero, so it moves to the adjacent week’s Thursday.
+
+
+
+
+                                                  Critical path, 
+
+A critical task is a task where a delay moves the project’s finish date.
+
+Definition: “The critical path is the sequence of tasks that determines the project’s finish date. Workfront flags these tasks automatically.”
+Why: “It shows which tasks can delay the project, so the manager knows where to focus.”
+Delay: “If a critical task slips, the project’s finish date moves by the same amount.”
+Float: “Float is how long a task can slip without delaying the project. Critical tasks have none.” (It is like spare time)
+Where: “In the Gantt chart, through the Options icon and Critical Path, where critical tasks get a red line. And in the task list, as a Critical Path flag in the Flags column.”
+Needs: “Tasks with durations and dependencies, because the path is calculated from them.”
+
