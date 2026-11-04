@@ -1,0 +1,47 @@
+                                                       Milestones
+
+A milestone is a marker attached to a task in a project that shows an important stage has been reached
+This function can provide managers and other stakeholders with a high-level overview as to how a project is progressing.
+
+Milestone path?
+A milestone path is a ready-made list of milestones that projects can use.
+That is the whole definition. A milestone is one marker. A milestone path is a list of markers.
+
+Why we need milestone path
+It is used ffor to mark improtant in project. to help track progress easilt 
+A project has many tasks, and a manager or client needs to see progress without reading all of them. Milestones give a short list of the key stages.
+Condition and progress status show whether the project is on schedule. They do not show which stage the project has reached. Milestones show the stage.
+When every project uses the same milestones, as defined in a milestone path, projects can be compared and reported on together.
+
+Where milestones are used in Workfront
+A path is attached to the project. The project must be in Planning or Current status.
+report
+
+Milestonepath attached to project
+Milestone path (the list)	The project must be in Planning or Current status. project-->edit-->milestone path 
+Milestone (one item from the list)	A task	Each milestone goes to only one task. task-->edit-->milestone
+
+How could check the milestone colour --> view-->status icon (you can see the diamond shape)
+
+
+Point                                                 	Detail
+Who can create it	                                     A System Administrator access level with a Standard plan or higher
+Where	                                                 Setup > Processes > Milestone Paths
+Active                                                 setting On by default. Inactive paths can’t be attached to projects.
+Groups	                                               They control which groups can see and use the path
+Changes are system-wide                               Changing a path affects the entire Workfront system, so be careful editing one that is in use
+Keep stages general                                  	One path serves many projects, so use general stages like “Design Approved”
+Project status                                       	The project must be in Planning or Current to have a path attached
+One project, one path                                	A project’s settings show a single Milestone Path field
+One milestone, one task                              	You can’t attach the same milestone to several tasks
+Order                                                	Milestones can be reordered by dragging
+Color                                               	Colors help visuals and reports. If you don’t pick one, the system reuses the last color used in a path.
+
+
+
+
+                                      Task assignments
+assigning a particular task to a user, team, or job role so that someone is responsible for completing that work.
+Best practice instead of assigne
+Assignment: The user, team, or role associated with completing the task.
+Task Owner: The person responsible for managing or coordinating the task.
