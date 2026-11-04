@@ -45,3 +45,42 @@ assigning a particular task to a user, team, or job role so that someone is resp
 Best practice instead of assigne
 Assignment: The user, team, or role associated with completing the task.
 Task Owner: The person responsible for managing or coordinating the task.
+
+
+
+                                      Work Schedules, Holidays & Time Zones
+Work shedule
+
+A Work Schedule defines the days and hours during which a person or team is expected to work.
+or example, imagine your organization follows this schedule:
+Day	Working hours
+Monday	9 AM – 6 PM
+Tuesday	9 AM – 6 PM
+Wednesday	9 AM – 6 PM
+Thursday	9 AM – 6 PM
+Friday	9 AM – 6 PM
+Saturday	Non-working day
+Sunday	Non-working day
+
+
+Types of Work Schedules
+
+A. Default Schedule :An organization can configure a standard schedule for its workforce.Example: Monday to Friday, 9 AM to 6 PM.
+B. User Schedule : An individual may have a different working schedule. Example: One employee works Monday to Friday, while another works Sunday to Thursday.
+C. Project Schedule: A project can use a schedule appropriate for the project team and its working arrangements.
+
+Holidays?
+Holidays are non-working days configured in a schedule.
+
+Example: Suppose your task starts on Thursday and takes two working days. Friday is a company holiday.
+The calculation would be:
+Day	Task progress
+Thursday	Day 1
+Friday	Holiday – no work
+Saturday	Weekend – no work
+
+Time Zones?
+A time zone represents the local time used by a person or organization.
+Imagine:
+- Project manager: India (IST)
+- Designer: Australia (AEST)   The same scheduled meeting can appear at different local times for each person.
