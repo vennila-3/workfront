@@ -94,3 +94,18 @@ Imagine:
 - Designer: Australia (AEST)   The same scheduled meeting can appear at different local times for each person.
 
 
+
+                                      Baseline
+A Baseline is a snapshot of a project's plan at a particular point in time.
+Create the initial baseline after the project plan
+
+Why do we use Baselines?
+Baselines help us:
+1. Compare original planned dates with current dates.
+2. Identify schedule delays.
+3. Track changes in project scope and schedule.
+4. Evaluate project performance.
+5. Support project reporting.
+
+What information does a Baseline capture?
+- Planned start and completion dates ,Task duration,Planned hours ,Other project and task details used for comparison.
