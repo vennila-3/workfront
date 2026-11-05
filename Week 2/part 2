@@ -1,3 +1,10 @@
+Baselines ★
+ Milestones and task assignments (users, teams, roles) ★★
+ Work schedules, holidays, non-work days, time zones ★★
+ Gantt and calendar views ★
+ Task priority and reminders ★
+
+
                                                        Milestones
 
 A milestone is a marker attached to a task in a project that shows an important stage has been reached
@@ -109,3 +116,55 @@ Baselines help us:
 
 What information does a Baseline capture?
 - Planned start and completion dates ,Task duration,Planned hours ,Other project and task details used for comparison.
+
+
+
+                                     Gantt and calendar views
+
+Gantt Chart 
+          Gantt Chart is a visual representation of project tasks, their start dates, completion dates, durations and dependencies.
+
+Why do we use Gantt Charts?
+1. Visualize the complete project schedule.
+2. Understand task dependencies.
+3. Identify overlapping tasks.
+4. Monitor project timelines.
+5. Identify scheduling conflicts and possible delays.
+
+Important elements of a Gantt Chart
+
+Task bar :Shows the planned duration of a task.
+Dependency line: Shows the relationship between dependent tasks.
+Milestone :Marks an important project event or achievement.
+Timeline:Shows the calendar dates along which tasks are scheduled.
+
+Complete list of options
+
+1	Assignments	Users assigned to tasks
+2	Baseline	Original saved project schedule (if we have multiple baseline only one can be select)
+3	Commit Date	Date by which the assignee commits to completing a task
+4	% Complete	Task completion percentage
+5	Critical Path	Tasks that determine the project completion date
+6	Milestone Diamonds	Diamond symbols representing milestones
+7	Milestone Lines	Lines indicating milestone dates on the timeline
+8	Predecessors	Dependencies between tasks
+9	Progress Status	Visual indication of task progress status
+10	Planned Dates	Planned task start and completion dates
+
+
+
+Important Gantt Chart colours
+
+Grey – Baseline Represents the saved original project schedule.
+Red – Critical Path Highlights tasks that can affect the project's overall completion date.
+Light Blue – Non-critical tasks  In the Project List Gantt Chart, tasks outside the critical path appear as light-blue lines.
+Green – On Time  Indicates a task is progressing on schedule.
+Yellow – Behind Indicates the task is falling behind its expected progress.
+Light Blue – At Risk Indicates a potential scheduling problem.
+Red – Late Indicates the task is late.
+
+Other visual indicators
+
+Green triangle	Actual start or completion date
+Diamond	Milestone Connecting line	Task predecessor relationship
+Marker	Assignee's Commit Date
