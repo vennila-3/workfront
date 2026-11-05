@@ -26,6 +26,7 @@ report
 
 Milestonepath attached to project
 Milestone path (the list)	The project must be in Planning or Current status. project-->edit-->milestone path 
+
 Milestone (one item from the list)	A task	Each milestone goes to only one task. task-->edit-->milestone
 
 How could check the milestone colour --> view-->status icon (you can see the diamond shape)
@@ -123,6 +124,7 @@ What information does a Baseline capture?
 
 Gantt Chart 
           Gantt Chart is a visual representation of project tasks, their start dates, completion dates, durations and dependencies.
+          Each bar runs from the task’s start date to its finish date, so you can see when each task happens and how tasks overlap.
 
 Why do we use Gantt Charts?
 1. Visualize the complete project schedule.
@@ -168,3 +170,84 @@ Other visual indicators
 Green triangle	Actual start or completion date
 Diamond	Milestone Connecting line	Task predecessor relationship
 Marker	Assignee's Commit Date
+
+
+Calendar view
+A calendar report is a dynamic report that gives a visual view of your work on a calendar. it shsows our assigned task and work based on due dates
+Adobe’s wording: “A calendar report is a dynamic report that provides a visual representation of your work.”Calendars can display events up to 5 years into the future.
+
+
+Object	Shown on the calendar :Tasks	,Issues ,Projects	
+
+we can view the calender in 3 way
+Month: Displays four weeks of the calendar
+Week: Displays one week of the calendar
+Gantt: Displays a continuous view of the calendar
+
+A Gantt chart shows tasks as bars on a timeline, so you see order and overlap. 
+A calendar report shows tasks, issues and projects on a calendar, so you see what falls on each date.
+
+
+                                                      Reminders
+A reminder is a notification Workfront sends to prompt someone about work that is due, late or needs attention.
+1)automatic 2) remainder send there are 2 way is there to send reminder
+
+Difference in one line each
+Automatic reminders are one admin setting that covers all tasks and issues.
+Reminder notifications are targeted, customizable, and attached to individual objects.Any attached object: projects, timesheets, tasks or issues
+
+
+Kind 1: automatic reminders
+
+Applies   --> to	All tasks and issues, system-wide
+Triggered ---> when	A task or issue is due, late, or near the planned completion date
+Sent to --->	The assignee, the assignee’s manager, or the manager of that manager
+Who controls it	--->Only a Workfront administrator can turn it on and edit it
+Email template	-->Can’t use one
+
+
+Kind 2 : reminder notifications
+
+Applies to  -->	Only the object it is attached to: a project, timesheet, task or issue
+Triggered --> when	Someone attaches it manually to an object
+Sent to	---> Stakeholders such as the owner, creator, approver or assignee
+Who sets it up	--->An administrator, or a user with a Standard or Plan license and administrative access to Reminder Notifications
+Email template -->	The default email or a custom template
+
+create the reminder notification?
+This needs an administrator (or a user with administrative access to reminder notifications).
+
+Step	What to do
+1	Main Menu > Setup
+2	Email > Notifications > Reminder Notifications
+3	Click New Reminder Notification
+4	Choose the object type (such as project, task, issue or timesheet)
+5	Fill in the fields below
+6	Click Save
+
+Attach it to an object?
+Anyone with Manage access to the object can do this, once the administrator has created the notification.
+
+Step	What to do
+1	Open the task, project or issue
+2	Click the Edit icon
+3	In the left panel, click Settings
+4	Under Reminder Notification, select one or more notifications
+5	Click Save Changes
+
+
+                                            Priority
+A priority indicates how important a work item is. It is set on projects, tasks and issues. we can customize also in setup like creating status
+Priority = how important the item is. It is not about the dates or the health.
+
+Default values --> Normal is the default for new items
+None	0,Low	1,Normal	2,High	3,Urgent	4
+
+The numbers are fixed and the labels can be renamed. An organization might relabel them, so check your instance.
+
+
+Rule                                  	Detail
+Hide                                   instead of delete	Adobe suggests hiding priorities you no longer want, not deleting them
+Deleting needs a replacement          	You must choose a replacement priority
+Minimum	                               Each object must  have at least one priority
+
