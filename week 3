@@ -1,0 +1,155 @@
+Week 3: Agile, requests and issues
+Agile in Workfront
+Agile teams, iterations, stories, backlogs ★★
+Kanban and Scrum boards ★★
+Requests and issues
+Request queues, queue topics, routing rules, queue permissions ★★★
+Issues, and converting an issue to a task or project ★★★
+Request forms, using custom forms in queues ★★★
+
+
+                                     AGILE
+Agile is a way of working where a team does its work in small pieces, finishing a few at a time, instead of planning one big project.
+Big plans can go wrong, because things change while the work is happening. With small pieces, a team finishes something, checks it, and adjusts before starting the next piece.
+
+How does Agile work?
+Plan ----> Develop ----->Review ----> Improve and plan again ---> Make adjustments and start the next cycle
+
+Important Agile terms
+Agile Team -->  People working together using Agile
+Backlog	-->     List of pending work
+Story -->       A small piece of work or requirement
+Iteration	-->   A fixed period in which selected work is completed
+Scrum	-->       An Agile framework that uses iterations
+Kanban -->	    A way to visualize and manage work on a board
+
+Why do companies use Agile?
+- Requirements can change frequently.
+- Teams can deliver work in smaller portions.
+- Customers can provide feedback regularly.
+- Teams can adjust priorities.
+- Progress is easier to visualize.
+
+
+                                AGILE TEAM
+an Agile Team is a team configured to manage work using Agile capabilities such as backlogs, iterations and Agile boards.
+
+Feature	                 Regular Team	       Agile Team
+Backlog management	      Not inherently	      Yes
+Iterations	              Not inherently	     Yes
+Agile boards	            Not inherently	     Yes
+Agile methodology	        Not required	      Configured for Agile work
+
+When you create a regular Workfront Team, you can use that team for normal collaboration and assignments.
+If the team needs to manage work using Agile, you can configure it for Agile functionality.
+
+How to create Agile team?
+it same as regular time toggle on agile team box 
+
+
+                          Iteration
+An Iteration is a fixed period during which an Agile Team plans and completes a selected set of work.
+
+Why do we need Iterations?
+Imagine your team has 30 pending development stories.
+Instead of trying to complete all 30 together, the team selects a manageable number for the next two weeks
+
+Name	        Campaign Development – Iteration 1
+Goal	        Complete campaign creation feature
+Start Date	  November 10, 2026
+End Date	    November 23, 2026
+Capacity	    20 points   amount of work
+Focus	         75%    percentage of available team time dedicated to planned iteration work.
+
+
+
+                   Story 
+A Story is a small, individual piece of work or requirement that an Agile Team plans to complete.
+
+
+Why do we need Stories? Imagine you have one large project with 50 requirements.
+If you track everything as one big task, it becomes difficult to understand:
+- What work needs to be completed?
+- Who is responsible?
+- How much effort is required?
+- What is completed?
+- What is still pending?
+Stories break the work into smaller, manageable items.
+
+
+What information does a Story contain?  A Story can include details such as:
+- Story Name
+- Description
+- Assigned To
+- Priority
+- Estimated effort (points or hours)
+- Status
+- Project association
+
+
+Story                                                Task                                    Issue
+Used in Agile work management	                       Used in project management	             Used to track a request or problem
+Managed through Agile boards and iterations	         Managed through project plans	        Can be managed through request queues
+Represents a small piece of Agile work	             Represents planned project work	      Represents an issue, request or problem
+
+
+
+                                       Backlog
+A Backlog is a prioritized list of work items that an Agile Team may work on in the future.
+
+Why do we need a Backlog?
+- To maintain all pending work in one place.
+- To prioritize work based on business requirements.
+- To help teams decide what to work on next.
+- To plan upcoming iterations.
+- To avoid losing track of new requirements.
+
+
+backlog vs story  --> both are creating in same place only but the main difference is 
+Priority field = Importance assigned to an individual Story.
+Backlog order = Relative position of Stories in the team's work list.
+
+
+we can set the backlog/story to iteration it has option for the backlog it ask same iteration planned start date end date fpocus capacity
+
+
+
+                                     Story Board
+A Story Board is a visual representation of Agile work items that helps teams track their status and monitor work progress.
+
+Why do we need a STORY Board?
+- To visualize the progress of Stories.
+- To understand which work is pending.
+- To identify work currently in progress.
+- To see completed work.
+- To help the team monitor its iteration.
+
+For this we need to select the scurm methodology in story or backlog then only we could see the story board
+it is in iterations ->story --> story board 
+
+                                     
+                                       Kanban in Adobe Workfront
+Kanban is an Agile method used to visualize work and manage its flow continuously using a board.
+Unlike Scrum, Kanban does not require fixed-length iterations.
+
+For this we need to select the kanban methodology 
+
+. Why do we need Kanban?
+- To visualize all ongoing work.
+- To identify pending work.
+- To manage continuous incoming requests.
+- To identify bottlenecks.
+- To avoid taking on too much work simultaneously.
+
+
+Scrum                              vs    Kanban 
+
+Uses fixed-length iterations	          Continuous workflow
+Work is planned for each iteration	     Work is picked up continuously
+Uses iteration planning             	   Focuses on work-in-progress limits
+Reviews work at iteration boundaries	   Reviews workflow continuously
+
+
+A support team receives new work requests every day and wants to complete them continuously without planning two-week cycles.
+Which methodology is more suitable? Kanban
+
