@@ -159,7 +159,102 @@ Which methodology is more suitable? Kanban
                                        Request
 
 A Request is a work submission made by a user to another team or department, asking them to perform some work or resolve an issue.
+          Request = someone asking for work that wasn’t in the plan.
+A submitted request becomes an issue in the request queue.
+Subject is the only required field
+When you submit the request, the draft automatically deletes and cannot be restored.
 
+Why do we need Requests?
+Without a request process:
+- Users may send requirements through emails.
+- Requests may get missed.
+- Teams may not know who submitted the request.
+- Tracking request status becomes difficult.
+With Workfront Requests:
+- Requests are submitted in one place.
+- Teams can review incoming requests.
+- Request status can be tracked.
+- Requests can be converted into actionable work when appropriate.
+
+
+                                             issue
+
+An issue is an unplanned work item. Adobe: “Unlike tasks, which are planned events, issues represent unplanned work items in Adobe Workfront.
+Issue = unplanned work that comes up.
+we can convert issue into task, project.    A small bug fix	Task, A large change request	Project
+
+Why do we need issues?
+Unexpected events happen during a project, such as a bug found or a change asked for.
+Issues let a team log them and follow them to completion. Adobe says this removes the need for lengthy email chains or status meetings.
+
+Issue types
+The default types are Bug Report, Change Order, Issue and Request. The names can differ in your instance.
+
+request vs issue
+A request and an issue are the same thing. Adobe: “Issues and requests are used interchangeably in Workfront
+Request is what the person submitting calls it.
+Issue is what the team handling it calls it.
+
+                                          
+                                            Queue Details
+Queue Details is the area of a project where you configure how the queue behaves.  Adobe says setting it up is mandatory. 
+
+
+Setting	                                        What it controls
+Publish as a help request                       queue	Turns the project into a queue
+Who can add requests	                          Anyone, people with view access to the project, or people in the project’s company or group
+Request types                                  	Bug Report, Change Order, Issue, Request
+Default duration and default approval process 	Defaults for new requests
+Default routing rule                            	Where requests go by default
+Visible fields and documents	                   What the submitter sees on the form
+Custom forms	                                   Extra fields on the request form
+Email queue settings	                            Whether requests can arrive by email
+
+
+Types of requests
+
+1. Bug Report: Used when someone reports that something is not working as expected.
+Example:
+- A user cannot upload an artwork.
+- A Workfront page is showing an error.
+- A link is not working.
+
+2. Change Order: Used when someone requests a change to work that has already been agreed upon or is in progress.
+Example:
+- A client has approved a design but now wants to change the background colour.
+- A campaign requirement changes after the project has started.
+
+3. Issue:Used to report a problem, concern, or unexpected situation that needs attention.
+Example:
+- An artwork is missing.
+- A task is blocked because required information is unavailable.
+- A delivery is delayed.
+
+4. Request:Used for general work or service requests that don't fit the other categories.
+Example:
+- Request a new banner design.
+- Request a new marketing campaign.
+- Ask the design team to create a new asset.
+
+Why do we configure Request Types?
+They help users classify their submissions and help the receiving team understand what kind of work is coming in.
+
+Three things to remember
+
+Status	---->The project must be Current to appear in the Requests area
+Requester access --->	You choose the access level they get: View, Contribute (the default) or Manage
+Who can set it up	Adobe’s page lists Standard or Plan license, Edit access to Projects and Manage permission on the project
+
+
+If Publish as a Help Request Queue is not enabled:
+- The project will not be available as a published Request Queue in the Requests area.
+- Users cannot submit requests to that project through the normal Request Queue submission process.
+
+
+
+
+What is a Request Queue?
+A Request Queue is a place in Workfront where users submit requests to a particular team or department.
 
 
 
